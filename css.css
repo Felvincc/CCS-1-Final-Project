@@ -1,18 +1,46 @@
 body {
     background-color: white;
+    font-family: 'Trebuchet MS', sans-serif;
     margin:0px;
 }
 
+.bold{font-weight: bold;}
+.italic{font-style: italic;}
 .webmargin{margin:0px;}
 .bgcolor{background-color: gray;}
 .bgcolor2{background-color:beige;}
+.floatleft{margin-right:auto;}
+.floatright{margin-left:auto;}
+.boxshadow{box-shadow: 0px 3px 10px 1px rgb(77, 77, 77);}
+
+
+hr{
+  height:1px;
+  background-color: white;
+}
 
 div.navbar{
     margin:0px;
     padding:10px;
-    width:100%;
-    height:90px;
-    background-color: gray;
+    background: linear-gradient(to right, #009ffd, #762aef);
+    height:120px;
+    color:white;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+}
+
+/* this stuff is for ang navbar links para dli sha mo change color kay its ugly :/ */
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:visited,
+.navbar a:active {
+  color: white;
+}
+
+.navbar a:hover {
+  color: #cce0ff;
 }
 
 div.rowcontainer {
@@ -30,20 +58,25 @@ div.colcontainer {
 div.box {
     margin:10px;
     padding: 10px;
-    box-shadow: 0px 0px 5px 3px rgb(77, 77, 77);
     border-radius: 10px;
 }
 
 div.body1 {
-    background-color: red;
+    background: linear-gradient(to right, #009ffd, #762aef);
     width: 40%;
-    height: 1000px;
+    height: 500px;
 }
 
 div.body2 {
     background-color: blue;
     width: 60%;
-    height: 1000px;
+    height: 500px;
+}
+
+div.footer{
+    background: linear-gradient(to right, #009ffd, #762aef);
+    height:200px;
+    color:white;
 }
 
 div.img {
