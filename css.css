@@ -12,6 +12,7 @@ body {
 .floatleft{margin-right:auto;}
 .floatright{margin-left:auto;}
 .boxshadow{box-shadow: 0px 3px 10px 1px rgb(77, 77, 77);}
+.center {margin: auto;}
 
 
 hr{
@@ -58,10 +59,7 @@ div.colcontainer {
 div.box {
     margin:10px;
     padding: 10px;
-<<<<<<< Updated upstream
-=======
     box-shadow: 0px 0px 10px 3px rgb(151, 151, 151);
->>>>>>> Stashed changes
     border-radius: 10px;
 }
 
