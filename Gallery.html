@@ -2,6 +2,46 @@
 <html>
 <head>
     <link type = "text/css" rel="stylesheet" href="css.css">
+
+ <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 30px;
+    }
+
+    #gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    #gallery img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      background-color: #3498db;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+  </style>
 </head>
 <body class="bgcolor2">
       <div class="navbar">
@@ -47,5 +87,24 @@
             <img src = "SU hall before.png" alt = "Image not found" class = "boxshadow frame">
         </div>
     </div>
+
+  <h2>Image Gallery</h2>
+
+  <div class="rowcontainer">
+
+<div class= "center">
+    <button onclick="prevImages()"> << </button>
+</div>
+  <div class= "center" id="gallery"></div>
+
+  <div class= "center">
+    <button onclick="nextImages()"> >> </button>
+  </div>
+
+</div>
+  <!-- Link to your JavaScript file -->
+  <script src="script.js"></script>
+
+
 </body>
 </html>
