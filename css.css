@@ -220,8 +220,8 @@ button:hover {
 }
 
 .image-wrapper img {
-  width: 300px;
-  height: 220px;
+  width: 330px;
+  height: 250px;
   object-fit: cover;
   border-radius: 8px;
   transition: transform 0.3s;
