@@ -18,6 +18,7 @@ body.contact {
 .boxshadow{box-shadow: 0px 3px 10px 1px rgb(77, 77, 77);}
 .center {margin: auto;}
 .centertext {text-align: center;}
+.textshadow{text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.6);}
 
 
 hr{
@@ -65,6 +66,10 @@ div.box {
     margin:10px;
     padding: 10px;
     border-radius: 10px;
+}
+
+div.boxtemp1{
+    background-color:#b9b9b9 ;
 }
 
 div.body1 {
