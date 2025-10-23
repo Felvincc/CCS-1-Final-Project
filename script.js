@@ -1,9 +1,17 @@
 // --- GALLERY 1 ---
 const images1 = [
+  "img/belltower.jpg",
+  "img/SU Hall.png",
+  "img/quezon park new.jpg",
+  "img/port new.jpg",
   "img/Sans Rival.jpg",
-  "img/vettel.jpg",
-  "img/SU hall.png",
-  "img/Pantawan.png"
+  "img/portal crossing.jpg",
+  "img/capitol.jpg",
+  "img/quezon park2.jpg",
+  "img/traffic light.jpg",
+  "img/catholicchurch.jpg",
+  "img/downtownpt2.jpg",
+  "img/robinsons new.jpg",
 ];
 let startIndex1 = 0;
 const imagesPerPage1 = 4;
@@ -60,9 +68,16 @@ showImages1();
 const images2 = [
   "img/Cathedral before.jpg",
   "img/SU hall before.png",
-  "img/quezon park new.jpg",
   "img/quezon park old.png",
-  "img/port before.jpg"
+  "img/port before.jpg",
+  "img/tree.jpg",
+  "img/Dumagetme sign.jpg",
+  "img/Pantawan.png",
+  "img/national museum.jpg",
+  "img/overview shot.jpg",
+  "img/downtown.jpg",
+  "img/pirate ship.jpg",
+  "img/old robinsons.jpeg"
 ];
 let startIndex2 = 0;
 const imagesPerPage2 = 4;
