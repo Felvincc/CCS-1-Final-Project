@@ -1,59 +1,115 @@
-// Array of image URLs
-const images = [
+// --- GALLERY 1 ---
+const images1 = [
   "Sans Rival.jpg",
   "vettel.jpg",
   "SU hall.png",
-  "Pantawan.png",
+  "Pantawan.png"
+];
+let startIndex1 = 0;
+const imagesPerPage1 = 4;
+const gallery1 = document.getElementById("gallery1");
+
+// Colors for Gallery 1
+const colors1 = ["#f8bbd0", "#bbdefb", "#c8e6c9", "#fff9c4"];
+let colorIndex1 = 0;
+
+function updateImages1() {
+  gallery1.innerHTML = "";
+  const currentImages = images1.slice(startIndex1, startIndex1 + imagesPerPage1);
+  currentImages.forEach(imgSrc => {
+    const img = document.createElement("img");
+    img.src = imgSrc;
+    gallery1.appendChild(img);
+  });
+}
+
+function showImages1(withAnimation = false) {
+  if (withAnimation) {
+    gallery1.classList.add("fade-out");
+    setTimeout(() => {
+      updateImages1();
+      gallery1.classList.remove("fade-out");
+      gallery1.classList.add("fade-in");
+      setTimeout(() => gallery1.classList.remove("fade-in"), 500);
+    }, 400);
+  } else updateImages1();
+}
+
+function nextImages1() {
+  startIndex1 += imagesPerPage1;
+  if (startIndex1 >= images1.length) startIndex1 = 0;
+  showImages1(true);
+  changeBackground1();
+}
+
+function prevImages1() {
+  startIndex1 -= imagesPerPage1;
+  if (startIndex1 < 0) startIndex1 = Math.max(0, images1.length - imagesPerPage1);
+  showImages1(true);
+}
+
+function changeBackground1() {
+  colorIndex1 = (colorIndex1 + 1) % colors1.length;
+  document.body.style.backgroundColor = colors1[colorIndex1];
+}
+
+showImages1();
+
+
+// --- GALLERY 2 ---
+const images2 = [
   "Cathedral before.jpg",
   "SU hall before.png",
   "quezon park new.jpg",
   "quezon park old.png",
-  "port before.jpg",
-  "Dumagetme sign.jpg",
-  "Dumaguete City Maps.png",
-  "vettel.jpg",
+  "port before.jpg"
 ];
+let startIndex2 = 0;
+const imagesPerPage2 = 4;
+const gallery2 = document.getElementById("gallery2");
 
-// Variables for pagination
-let startIndex = 0;
-const imagesPerPage = 4;
+// Colors for Gallery 2
+const colors2 = ["#d1c4e9", "#ffccbc", "#b2dfdb", "#ffe0b2"];
+let colorIndex2 = 0;
 
-// Get the gallery container
-const gallery = document.getElementById("gallery");
-
-// Function to display 4 images at a time
-function showImages() {
-  gallery.innerHTML = ""; // Clear previous images
-
-  // Get the 4 images for the current "page"
-  const currentImages = images.slice(startIndex, startIndex + imagesPerPage);
-
-  // Create and add image elements
+function updateImages2() {
+  gallery2.innerHTML = "";
+  const currentImages = images2.slice(startIndex2, startIndex2 + imagesPerPage2);
   currentImages.forEach(imgSrc => {
     const img = document.createElement("img");
     img.src = imgSrc;
-    gallery.appendChild(img);
+    gallery2.appendChild(img);
   });
 }
 
-//Go to next 4 images//
-
-function nextImages() {
-    startIndex += imagesPerPage;
-    if (startIndex >= images.length) {
-    startIndex = 0; //Loop back to start
-    }
-    showImages();
+function showImages2(withAnimation = false) {
+  if (withAnimation) {
+    gallery2.classList.add("fade-out");
+    setTimeout(() => {
+      updateImages2();
+      gallery2.classList.remove("fade-out");
+      gallery2.classList.add("fade-in");
+      setTimeout(() => gallery2.classList.remove("fade-in"), 500);
+    }, 400);
+  } else updateImages2();
 }
 
-// Go to previous 4 images
-function prevImages() {
-  startIndex -= imagesPerPage;
-  if (startIndex < 0) {
-    startIndex = Math.max(0, images.length - imagesPerPage); // Go to last set
-  }
-  showImages();
+function nextImages2() {
+  startIndex2 += imagesPerPage2;
+  if (startIndex2 >= images2.length) startIndex2 = 0;
+  showImages2(true);
+  changeBackground2();
 }
 
-// Initial display
-showImages();
+function prevImages2() {
+  startIndex2 -= imagesPerPage2;
+  if (startIndex2 < 0) startIndex2 = Math.max(0, images2.length - imagesPerPage2);
+  showImages2(true);
+}
+
+function changeBackground2() {
+  colorIndex2 = (colorIndex2 + 1) % colors2.length;
+  document.body.style.backgroundColor = colors2[colorIndex2];
+}
+
+showImages2();

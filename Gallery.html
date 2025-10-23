@@ -2,46 +2,6 @@
 <html>
 <head>
     <link type = "text/css" rel="stylesheet" href="css.css">
-
- <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin: 30px;
-    }
-
-    #gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-      margin-bottom: 20px;
-    }
-
-    #gallery img {
-      width: 200px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    }
-
-    button {
-      padding: 10px 20px;
-      font-size: 16px;
-      margin: 5px;
-      border: none;
-      border-radius: 5px;
-      background-color: #3498db;
-      color: white;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    button:hover {
-      background-color: #2980b9;
-    }
-  </style>
 </head>
 <body class="bgcolor2">
       <div class="navbar">
@@ -61,46 +21,23 @@
         </div>
         <hr>
     </div>
-    <div class="colcontainer">
-        <div class="rowcontainer center">
-            <img src = "Dumagetme sign.jpg" alt = "Image not found" class = "boxshadow frame">
-            <img src = "Pantawan.png" alt = "Image not found" class = "boxshadow frame">
-            <img src = "Sans Rival.jpg" alt = "Image not found" class = "boxshadow frame">
-            <img src = "SU hall before.png" alt = "Image not found" class = "boxshadow frame">
-        </div>
-        <div class="rowcontainer center">
-            <img src = "quezon park old.png" alt = "Image not found" class = "boxshadow frame">
-            <img src = "quezon park new.jpg" alt = "Image not found" class = "boxshadow frame">
-            <img src = "port before.jpg" alt = "Image not found" class = "boxshadow frame">
-            <img src = "SU Hall.png" alt = "Image not found" class = "boxshadow frame">      
-        </div>
-        <div class="rowcontainer center">
-            <img src = "Dumaguete City Maps.png" alt = "Image not found" class = "boxshadow frame">
-            <img src = "Dumagetme sign.jpg" alt = "Image not found" class = "boxshadow frame">
-            <img src = "Cathedral before.jpg" alt = "Image not found" class = "boxshadow frame">
-            <img src = "SU Hall.png" alt = "Image not found" class = "boxshadow frame">      
-        </div>
-        <div class="rowcontainer center">
-            <img src = "Dumagetme sign.jpg" alt = "Image not found" class = "boxshadow frame">
-            <img src = "Pantawan.png" alt = "Image not found" class = "boxshadow frame">
-            <img src = "Sans Rival.jpg" alt = "Image not found" class = "boxshadow frame">
-            <img src = "SU hall before.png" alt = "Image not found" class = "boxshadow frame">
-        </div>
-    </div>
 
-  <h2>Image Gallery</h2>
+  <h1 class = "centertext" style="margin-top: 40px;">Image Gallery</h1>
 
-  <div class="rowcontainer">
-
-<div class= "center">
-    <button onclick="prevImages()"> << </button>
-</div>
-  <div class= "center" id="gallery"></div>
-
-  <div class= "center">
-    <button onclick="nextImages()"> >> </button>
+  <div class="gallery-container">
+    <div class="rowcontainer">
+      <button class="button" onclick="prevImages1()"> << </button>
+        <div id="gallery1" class="gallery"></div>
+      <button class="button" onclick="nextImages1()"> >>  </button>
   </div>
+</div>
 
+<div class="gallery-container">
+    <div class="rowcontainer">
+      <button class="button" onclick="prevImages2()"> <<  </button>
+        <div id="gallery2" class="gallery"></div>
+      <button class="button" onclick="nextImages2()"> >> </button>
+    </div>
 </div>
   <!-- Link to your JavaScript file -->
   <script src="script.js"></script>

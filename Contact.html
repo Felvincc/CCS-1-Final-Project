@@ -3,7 +3,7 @@
 <head>
     <link type = "text/css" rel="stylesheet" href="css.css">
 </head>
-<body>
+<body class = "contact">
       <div class="navbar">
 
         <!-- this div is so that the contents inside the navbar is horizontally next to each other-->
@@ -25,22 +25,30 @@
     <form>
         <div class="rowcontainer">
             <div class="colcontainer" style="margin: auto;">
-                <h2>Contact Me</h2>
-                <label for="name">Name:</label><br>
-                <input class = "box" type="text" id="name" name="name" required><br><br>
+                <h1 class="contact">Contact Us!</h1>
+                <label class="bold" for="name">Name:</label><br>
+                <input type="text" name="name" required><br><br>
             
-                <label for="email">Email:</label><br>
-                <input class = "box" type="email" id="email" name="email" required><br><br>
+                <label class="bold" for="email">Email:</label><br>
+                <input type="email" name="email" required><br><br>
+
+                <label class="bold" for="phone">Phone Number:</label><br>
+                <input type="phone" name="phone" required><br><br>
             
-                <label for="message">Message:</label><br>
-                <textarea class = "box" name="message" rows="4" cols="50" required></textarea><br><br>
-            
-                <input class = "box" type="submit" value="Submit">
+                <label class="bold" for="message">Message:</label><br>
+                <textarea name="message" rows="4" cols="50" required></textarea><br><br>
+                
+                <div class="centertext">
+                <input class="submitting bold" type="submit" value="Submit">
+                </div>
             </div>
 
-            <div class="body1 colcontainer" style = "margin: auto;">
-                <h1>CONTACT US</h1>
-                <p class="body2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            <div class="contact colcontainer" style="margin-right: 200px;">
+                <h1 class="contact">CONTACT INFORMATION:</h1>
+                <p class="body"><img class="icon" src="phone.png"> (0912) 345 6789</p>
+                <p class="body"><img class="icon" src="phone.png"> (0912) 345 6789</p>
+                <p class="body"><img class="icon" src="gmail.jpg"> vcpierredcalunsag@su.edu.ph</p>
+                <p class="body"><img class="icon" src="gmail.jpg"> felvinceedy@su.edu.ph</p>
         </div>
     </form>
 </body>
