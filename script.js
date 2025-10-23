@@ -1,9 +1,9 @@
 // --- GALLERY 1 ---
 const images1 = [
-  "Sans Rival.jpg",
-  "vettel.jpg",
-  "SU hall.png",
-  "Pantawan.png"
+  "img/Sans Rival.jpg",
+  "img/vettel.jpg",
+  "img/SU hall.png",
+  "img/Pantawan.png"
 ];
 let startIndex1 = 0;
 const imagesPerPage1 = 4;
@@ -58,11 +58,11 @@ showImages1();
 
 // --- GALLERY 2 ---
 const images2 = [
-  "Cathedral before.jpg",
-  "SU hall before.png",
-  "quezon park new.jpg",
-  "quezon park old.png",
-  "port before.jpg"
+  "img/Cathedral before.jpg",
+  "img/SU hall before.png",
+  "img/quezon park new.jpg",
+  "img/quezon park old.png",
+  "img/port before.jpg"
 ];
 let startIndex2 = 0;
 const imagesPerPage2 = 4;
