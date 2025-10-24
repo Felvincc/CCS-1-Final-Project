@@ -23,6 +23,20 @@ body.contact {
 .color{color: #009ffd;}
 
 
+.uglylink a {
+  color: #009ffd;
+  text-decoration: none;
+}
+
+.uglylink a:visited,
+.uglylink a:active {
+  color: #009ffd;
+}
+
+.navbar a:hover {
+  color: rgb(82, 104, 136);
+}
+
 hr{
   height:1px;
   background-color: white;
@@ -197,6 +211,18 @@ body.contact {
     gap: 14px;
 }
 
+.button2{
+    padding: 10px 20px;
+    border-radius: 100px;
+    background-color: #009ffd;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    align-self: center;
+    height: 100px;
+    width: 300px;
+}
+
 button {
     padding: 10px 20px;
     font-size: 16px;
@@ -204,7 +230,7 @@ button {
     margin-right: 20px;
     border: none;
     border-radius: 5px;
-    background-color: #cf1d1d;
+    background-color: #009ffd;
     color: white;
     cursor: pointer;
     transition: 0.3s;
@@ -214,7 +240,7 @@ button {
 }
 
 button:hover {
-    background-color: #cf1d1d;
+    background-color: #0072b4;
 }
 
 .image-wrapper {
