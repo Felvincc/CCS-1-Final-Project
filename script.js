@@ -1,10 +1,35 @@
 // --- GALLERY 1 ---
 const images1 = [
+  "img/belltower.jpg",
+  "img/SU Hall.png",
+  "img/quezon park new.jpg",
+  "img/port new.jpg",
   "img/Sans Rival.jpg",
-  "img/vettel.jpg",
-  "img/SU hall.png",
-  "img/Pantawan.png"
+  "img/portal crossing.jpg",
+  "img/capitol.jpg",
+  "img/quezon park2.jpg",
+  "img/traffic light.jpg",
+  "img/catholicchurch.jpg",
+  "img/downtownpt2.jpg",
+  "img/robinsons new.jpg",
 ];
+
+//Labels for each image in Gallery 1
+const labels1 = [
+  "Dumaguete Bell Tower",
+  "Silliman University Hall",
+  "Quezon Park (New)",
+  "Dumaguete Port (New)",
+  "Sans Rival Cakes & Pastries",
+  "Sillman Crossing",
+  "Negros Oriental Capitol",
+  "Quezon Park (Alternate View)",
+  "1st Traffic Light",
+  "Catholic Church",
+  "Downtown Area",
+  "Robinsons Place (New)"
+];
+
 let startIndex1 = 0;
 const imagesPerPage1 = 4;
 const gallery1 = document.getElementById("gallery1");
@@ -16,10 +41,22 @@ let colorIndex1 = 0;
 function updateImages1() {
   gallery1.innerHTML = "";
   const currentImages = images1.slice(startIndex1, startIndex1 + imagesPerPage1);
-  currentImages.forEach(imgSrc => {
+  const currentLabels = labels1.slice(startIndex1, startIndex1 + imagesPerPage1);
+
+  currentImages.forEach((imgSrc, index) => {
+    const wrapper = document.createElement("div");
+    wrapper.classList.add("image-wrapper");
+
     const img = document.createElement("img");
     img.src = imgSrc;
-    gallery1.appendChild(img);
+
+    const label = document.createElement("p");
+    label.textContent = currentLabels[index];
+    label.classList.add("image-label");
+
+    wrapper.appendChild(img);
+    wrapper.appendChild(label);
+    gallery1.appendChild(wrapper);
   });
 }
 
@@ -60,10 +97,34 @@ showImages1();
 const images2 = [
   "img/Cathedral before.jpg",
   "img/SU hall before.png",
-  "img/quezon park new.jpg",
   "img/quezon park old.png",
-  "img/port before.jpg"
+  "img/port before.jpg",
+  "img/tree.jpg",
+  "img/Dumagetme sign.jpg",
+  "img/Pantawan.png",
+  "img/national museum.jpg",
+  "img/overview shot.jpg",
+  "img/downtown.jpg",
+  "img/pirate ship.jpg", 
+  "img/old robinsons.jpeg"
 ];
+
+//Labels for Gallery 2
+const labels2 = [
+  "Cathedral (Old)",
+  "Silliman Hall (Old)",
+  "Quezon Park (Old)",
+  "Dumaguete Port (Before)",
+  "Tree by the Boulevard",
+  "Dumaguete Sign",
+  "Pantawan Area",
+  "National Museum",
+  "City Overview Shot",
+  "Downtown Dumaguete",
+  "Pirate Ship",
+  "Robinsons Place (Old)"
+];
+
 let startIndex2 = 0;
 const imagesPerPage2 = 4;
 const gallery2 = document.getElementById("gallery2");
@@ -72,13 +133,28 @@ const gallery2 = document.getElementById("gallery2");
 const colors2 = ["#d1c4e9", "#ffccbc", "#b2dfdb", "#ffe0b2"];
 let colorIndex2 = 0;
 
+// Update images in Gallery 2
 function updateImages2() {
   gallery2.innerHTML = "";
   const currentImages = images2.slice(startIndex2, startIndex2 + imagesPerPage2);
-  currentImages.forEach(imgSrc => {
+  const currentLabels = labels2.slice(startIndex2, startIndex2 + imagesPerPage2);
+
+//
+  currentImages.forEach((imgSrc, index) => {
+    const wrapper = document.createElement("div");
+    wrapper.classList.add("image-wrapper");
+
+    //
     const img = document.createElement("img");
     img.src = imgSrc;
-    gallery2.appendChild(img);
+
+    const label = document.createElement("p");
+    label.textContent = currentLabels[index];
+    label.classList.add("image-label");
+
+    wrapper.appendChild(img);
+    wrapper.appendChild(label);
+    gallery2.appendChild(wrapper);
   });
 }
 

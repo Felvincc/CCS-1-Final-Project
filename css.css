@@ -112,7 +112,13 @@ div.img {
     float: right;
 }
 
-img.frame {
+img.frame2 {
+    border: 3px solid white;
+    width: 500px;
+    height: 320px;
+}
+
+img.frame1 {
     border: 3px solid white;
     width: 300px;
     height: 220px;
@@ -122,6 +128,7 @@ img.frame {
 p.body {
     font-size: 20px;
     font-family: arial;
+    line-height: 1.5;
 }
 
 /*Selectors for the input and box in Contact page*/
@@ -141,6 +148,8 @@ input.submitting {
 h1.contact {
     font-size: 40px;
     font-family: Verdana;
+    margin-bottom: 10px;
+    margin-top: 0px;
 }
 
 img.icon {
@@ -178,7 +187,7 @@ img.icon {
     transform: scale(1);
 }
 
-body {
+body.contact {
     transition: background-color 0.8s ease;
 }
 
@@ -197,7 +206,7 @@ button {
     margin-right: 20px;
     border: none;
     border-radius: 5px;
-    background-color: #3498db;
+    background-color: #cf1d1d;
     color: white;
     cursor: pointer;
     transition: 0.3s;
@@ -207,5 +216,32 @@ button {
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: #cf1d1d;
 }
+
+.image-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-wrapper img {
+  width: 330px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.image-wrapper img:hover {
+  transform: scale(1.05);
+}
+
+.image-label {
+  margin-top: 6px;
+  font-size: 20px;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+}
+
