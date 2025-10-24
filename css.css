@@ -8,6 +8,7 @@ body.contact {
     background-color: antiquewhite;
 }
 
+/*god help us*/
 .bold{font-weight: bold;}
 .italic{font-style: italic;}
 .webmargin{margin:0px;}
@@ -18,12 +19,26 @@ body.contact {
 .boxshadow{box-shadow: 0px 3px 10px 1px rgb(77, 77, 77);}
 .center {margin: auto;}
 .centertext {text-align: center;}
-.textshadow{text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.6);}
+.textshadow{text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);}
 
 
 hr{
   height:1px;
   background-color: white;
+}
+
+div.footerboxes{
+    margin:auto;
+    color:white;
+}
+
+div.footer{
+    margin:0px;
+    padding:10px;
+    background: linear-gradient(to right, #5a5a5a);
+    height:450px;
+    color:white;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
 }
 
 div.navbar{
@@ -50,9 +65,10 @@ div.navbar{
   color: #cce0ff;
 }
 
-h1.contact a{
-    color: black;
-    text-decoration: none
+div.boxtemp1{
+    font-size:50px;
+    background-color:white;
+    color:#009ffd;
 }
 
 div.rowcontainer {
@@ -73,10 +89,6 @@ div.box {
     border-radius: 10px;
 }
 
-div.boxtemp1{
-    background-color:#b9b9b9 ;
-}
-
 div.body1 {
     background: linear-gradient(to right, #009ffd, #762aef);
     width: 40%;
@@ -87,12 +99,6 @@ div.body2 {
     width: 60%;
     height: 500px;
     padding: 20px;
-}
-
-div.footer{
-    background: linear-gradient(to right, #009ffd, #762aef);
-    height:200px;
-    color:white;
 }
 
 div.contact {
