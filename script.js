@@ -14,7 +14,6 @@ const images1 = [
   "img/robinsons new.jpg",
 ];
 
-//Labels for each image in Gallery 1
 const labels1 = [
   "Dumaguete Bell Tower",
   "Silliman University Hall",
@@ -34,7 +33,7 @@ let startIndex1 = 0;
 const imagesPerPage1 = 4;
 const gallery1 = document.getElementById("gallery1");
 
-// Colors for Gallery 1
+
 const colors1 = ["#f8bbd0", "#bbdefb", "#c8e6c9", "#fff9c4"];
 let colorIndex1 = 0;
 
@@ -109,7 +108,7 @@ const images2 = [
   "img/old robinsons.jpeg"
 ];
 
-//Labels for Gallery 2
+
 const labels2 = [
   "Cathedral (Old)",
   "Silliman Hall (Old)",
@@ -129,22 +128,21 @@ let startIndex2 = 0;
 const imagesPerPage2 = 4;
 const gallery2 = document.getElementById("gallery2");
 
-// Colors for Gallery 2
+
 const colors2 = ["#d1c4e9", "#ffccbc", "#b2dfdb", "#ffe0b2"];
 let colorIndex2 = 0;
 
-// Update images in Gallery 2
 function updateImages2() {
   gallery2.innerHTML = "";
   const currentImages = images2.slice(startIndex2, startIndex2 + imagesPerPage2);
   const currentLabels = labels2.slice(startIndex2, startIndex2 + imagesPerPage2);
 
-//
+
   currentImages.forEach((imgSrc, index) => {
     const wrapper = document.createElement("div");
     wrapper.classList.add("image-wrapper");
 
-    //
+
     const img = document.createElement("img");
     img.src = imgSrc;
 
