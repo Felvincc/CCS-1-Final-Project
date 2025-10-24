@@ -37,10 +37,9 @@ const gallery1 = document.getElementById("gallery1");
 const colors1 = ["#f8bbd0", "#bbdefb", "#c8e6c9", "#fff9c4"];
 let colorIndex1 = 0;
 
-function updateImages1() {
-  gallery1.innerHTML = "";
-  const currentImages = images1.slice(startIndex1, startIndex1 + imagesPerPage1);
-  const currentLabels = labels1.slice(startIndex1, startIndex1 + imagesPerPage1);
+function updateImages1() {gallery1.innerHTML = "";
+    const currentImages = images1.slice(startIndex1, startIndex1 + imagesPerPage1);
+    const currentLabels = labels1.slice(startIndex1, startIndex1 + imagesPerPage1);
 
   currentImages.forEach((imgSrc, index) => {
     const wrapper = document.createElement("div");
@@ -187,3 +186,14 @@ function changeBackground2() {
 }
 
 showImages2();
+
+function nextvideo(VideoId) {
+  const iframe = document.getElementById("ytPlayer");
+  iframe.src = `https://www.youtube.com/embed/${VideoId}?autoplay=1`;
+}
+
+  
+
+/* 
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/-jXZ1IqEraY?si=R5LkF3E6HMSeA2vq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+*/
