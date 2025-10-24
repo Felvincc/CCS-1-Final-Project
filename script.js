@@ -1,3 +1,6 @@
+alert ("Hi Maam! To fully appreciate the webiste, we recommend adjusting your browser zoom to the appropriate level. We noticed the display is altered between different devices (eg. our laptops and the CCS computers). Thank you and sorry for the inconvenience!");
+
+
 // --- GALLERY 1 ---
 const images1 = [
   "img/belltower.jpg",
