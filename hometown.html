@@ -43,22 +43,22 @@
     <div class="rowcontainer center">
         <div class="center colcontainer">
             <center>
-                <img class="boxshadow center" src="img/SU Hall.png" alt="Silliman University Hall" height="250px"><br><br><br>
-                <button class="button2 textshadow" onclick="nextImages1()" style="font-size:40px">Click me!</button>
+                <img id="hometownimage1" class="boxshadow center" src="img/SU Hall.png" alt="Silliman University Hall" height="250px"><br><br><br>
+                <button class="button2 textshadow" onclick="clickme1()" style="font-size:40px">Click me!</button>
             </center>
             
         </div>  
         <div class="center colcontainer">
             <center>
-                <img class="boxshadow center" src="img/belltower.jpg" alt="Bell Tower" height="250px"><br><br><br>
-                <button class="button2 textshadow" onclick="nextImages1()" style="font-size:40px">Click me!</button>
+                <img id="hometownimage2" class="boxshadow center" src="img/belltower.jpg" alt="Bell Tower" height="250px"><br><br><br>
+                <button class="button2 textshadow" onclick="clickme2()" style="font-size:40px">Click me!</button>
             </center>
             
         </div>
         <div class="center colcontainer">
             <center>
-                <img class="boxshadow center" src="img/Pantawan.png" alt="Rizal Boulevard: Pantawan Area" height="250px"><br><br><br>
-                <button class="button2 textshadow" onclick="nextImages1()" style="font-size:40px">Click me!</button>
+                <img id="hometownimage3" class="boxshadow center" src="img/Pantawan.png" alt="Rizal Boulevard: Pantawan Area" height="250px"><br><br><br>
+                <button class="button2 textshadow" onclick="clickme3()" style="font-size:40px">Click me!</button>
             </center>
         </div>
 
@@ -127,9 +127,47 @@
         
     </div>
 
-    
+<script>
+        /*1st Click Me*/
+const images = [
+    "img/SU Hall.png",
+    "img/belltower.jpg",
+    "img/Pantawan.png",
+    "img/Cathedral before.jpg",
+    "img/SU hall before.png",
+    "img/quezon park old.png",
+    "img/port before.jpg"
+]
 
-    
+let index1 = 0;
+let index2 = 1;
+let index3 = 2;
 
+function clickme1() {
+    document.getElementById("hometownimage1").src = images[index1];
+    index1++;
+    if (index1 >= 6) {
+        index1 = 0;
+    }
+}
+
+function clickme2() {
+    document.getElementById("hometownimage2").src = images[index2];
+    index2++;
+    if (index2 >= 6) {
+        index2 = 0;
+    }
+}
+
+function clickme3() {
+    document.getElementById("hometownimage3").src = images[index3];
+    index3++;
+    if (index3 >= 6) {
+        index3 = 0;
+    }
+}
+</script>
+
+<script src="script.js"></script>
 </body>
 </html>
