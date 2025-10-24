@@ -34,7 +34,7 @@ const imagesPerPage1 = 4;
 const gallery1 = document.getElementById("gallery1");
 
 
-const colors1 = ["#f8bbd0", "#bbdefb", "#c8e6c9", "#fff9c4"];
+const colors1 = ["#ffffffff", "#bbdefb", "#c8e6c9", "#fff9c4"];
 let colorIndex1 = 0;
 
 function updateImages1() {
